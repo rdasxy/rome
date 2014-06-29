@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		391EF0041960A23100FEA436 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391EF0031960A23100FEA436 /* Cocoa.framework */; };
+		391EF00E1960A23100FEA436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 391EF00C1960A23100FEA436 /* InfoPlist.strings */; };
+		391EF0101960A23100FEA436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF00F1960A23100FEA436 /* main.m */; };
+		391EF0141960A23100FEA436 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0121960A23100FEA436 /* Credits.rtf */; };
+		391EF0171960A23100FEA436 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF0161960A23100FEA436 /* RMAppDelegate.m */; };
+		391EF01A1960A23100FEA436 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0181960A23100FEA436 /* MainMenu.xib */; };
+		391EF01C1960A23100FEA436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391EF01B1960A23100FEA436 /* Images.xcassets */; };
+		391EF0231960A23100FEA436 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391EF0221960A23100FEA436 /* XCTest.framework */; };
+		391EF0241960A23100FEA436 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391EF0031960A23100FEA436 /* Cocoa.framework */; };
+		391EF02C1960A23100FEA436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 391EF02A1960A23100FEA436 /* InfoPlist.strings */; };
+		391EF02E1960A23100FEA436 /* RomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF02D1960A23100FEA436 /* RomeTests.m */; };
+		391EF03B1960A58700FEA436 /* icon_available.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0381960A58700FEA436 /* icon_available.png */; };
+		391EF03C1960A58700FEA436 /* icon_busy.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0391960A58700FEA436 /* icon_busy.png */; };
+		391EF03D1960A58700FEA436 /* icon_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF03A1960A58700FEA436 /* icon_offline.png */; };
+		391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */; };
+		391EF0481960A7BD00FEA436 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		391EF0251960A23100FEA436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 391EEFF81960A23100FEA436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 391EEFFF1960A23100FEA436;
+			remoteInfo = Rome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		391EF0001960A23100FEA436 /* Rome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		391EF0031960A23100FEA436 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		391EF0061960A23100FEA436 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		391EF0071960A23100FEA436 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		391EF0081960A23100FEA436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		391EF00B1960A23100FEA436 /* Rome-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rome-Info.plist"; sourceTree = "<group>"; };
+		391EF00D1960A23100FEA436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		391EF00F1960A23100FEA436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		391EF0111960A23100FEA436 /* Rome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rome-Prefix.pch"; sourceTree = "<group>"; };
+		391EF0131960A23100FEA436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		391EF0151960A23100FEA436 /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		391EF0161960A23100FEA436 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
+		391EF0191960A23100FEA436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		391EF01B1960A23100FEA436 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		391EF0211960A23100FEA436 /* RomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		391EF0221960A23100FEA436 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		391EF0291960A23100FEA436 /* RomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RomeTests-Info.plist"; sourceTree = "<group>"; };
+		391EF02B1960A23100FEA436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		391EF02D1960A23100FEA436 /* RomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomeTests.m; sourceTree = "<group>"; };
+		391EF0381960A58700FEA436 /* icon_available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_available.png; sourceTree = "<group>"; };
+		391EF0391960A58700FEA436 /* icon_busy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_busy.png; sourceTree = "<group>"; };
+		391EF03A1960A58700FEA436 /* icon_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_offline.png; sourceTree = "<group>"; };
+		391EF0441960A7BD00FEA436 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamWindowController.h; path = WindowControllers/RMTeamWindowController.h; sourceTree = "<group>"; };
+		391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamWindowController.m; path = WindowControllers/RMTeamWindowController.m; sourceTree = "<group>"; };
+		391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RMTeamWindowController.xib; path = WindowControllers/RMTeamWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		391EEFFD1960A23100FEA436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF0041960A23100FEA436 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391EF01E1960A23100FEA436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF0241960A23100FEA436 /* Cocoa.framework in Frameworks */,
+				391EF0231960A23100FEA436 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		391EEFF71960A23100FEA436 = {
+			isa = PBXGroup;
+			children = (
+				391EF0091960A23100FEA436 /* Rome */,
+				391EF0271960A23100FEA436 /* RomeTests */,
+				391EF0021960A23100FEA436 /* Frameworks */,
+				391EF0011960A23100FEA436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		391EF0011960A23100FEA436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0001960A23100FEA436 /* Rome.app */,
+				391EF0211960A23100FEA436 /* RomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		391EF0021960A23100FEA436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0031960A23100FEA436 /* Cocoa.framework */,
+				391EF0221960A23100FEA436 /* XCTest.framework */,
+				391EF0051960A23100FEA436 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		391EF0051960A23100FEA436 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0061960A23100FEA436 /* AppKit.framework */,
+				391EF0071960A23100FEA436 /* CoreData.framework */,
+				391EF0081960A23100FEA436 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		391EF0091960A23100FEA436 /* Rome */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0491960A7C100FEA436 /* WindowControllers */,
+				391EF0151960A23100FEA436 /* RMAppDelegate.h */,
+				391EF0161960A23100FEA436 /* RMAppDelegate.m */,
+				391EF0181960A23100FEA436 /* MainMenu.xib */,
+				391EF01B1960A23100FEA436 /* Images.xcassets */,
+				391EF00A1960A23100FEA436 /* Supporting Files */,
+			);
+			path = Rome;
+			sourceTree = "<group>";
+		};
+		391EF00A1960A23100FEA436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0371960A57E00FEA436 /* Images */,
+				391EF00B1960A23100FEA436 /* Rome-Info.plist */,
+				391EF00C1960A23100FEA436 /* InfoPlist.strings */,
+				391EF00F1960A23100FEA436 /* main.m */,
+				391EF0111960A23100FEA436 /* Rome-Prefix.pch */,
+				391EF0121960A23100FEA436 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		391EF0271960A23100FEA436 /* RomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				391EF02D1960A23100FEA436 /* RomeTests.m */,
+				391EF0281960A23100FEA436 /* Supporting Files */,
+			);
+			path = RomeTests;
+			sourceTree = "<group>";
+		};
+		391EF0281960A23100FEA436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0291960A23100FEA436 /* RomeTests-Info.plist */,
+				391EF02A1960A23100FEA436 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		391EF0371960A57E00FEA436 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0381960A58700FEA436 /* icon_available.png */,
+				391EF0391960A58700FEA436 /* icon_busy.png */,
+				391EF03A1960A58700FEA436 /* icon_offline.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		391EF0491960A7C100FEA436 /* WindowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				391EF0441960A7BD00FEA436 /* RMTeamWindowController.h */,
+				391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */,
+				391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */,
+			);
+			name = WindowControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		391EEFFF1960A23100FEA436 /* Rome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391EF0311960A23100FEA436 /* Build configuration list for PBXNativeTarget "Rome" */;
+			buildPhases = (
+				391EEFFC1960A23100FEA436 /* Sources */,
+				391EEFFD1960A23100FEA436 /* Frameworks */,
+				391EEFFE1960A23100FEA436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rome;
+			productName = Rome;
+			productReference = 391EF0001960A23100FEA436 /* Rome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		391EF0201960A23100FEA436 /* RomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391EF0341960A23100FEA436 /* Build configuration list for PBXNativeTarget "RomeTests" */;
+			buildPhases = (
+				391EF01D1960A23100FEA436 /* Sources */,
+				391EF01E1960A23100FEA436 /* Frameworks */,
+				391EF01F1960A23100FEA436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				391EF0261960A23100FEA436 /* PBXTargetDependency */,
+			);
+			name = RomeTests;
+			productName = RomeTests;
+			productReference = 391EF0211960A23100FEA436 /* RomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		391EEFF81960A23100FEA436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Laplacian;
+				TargetAttributes = {
+					391EF0201960A23100FEA436 = {
+						TestTargetID = 391EEFFF1960A23100FEA436;
+					};
+				};
+			};
+			buildConfigurationList = 391EEFFB1960A23100FEA436 /* Build configuration list for PBXProject "Rome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 391EEFF71960A23100FEA436;
+			productRefGroup = 391EF0011960A23100FEA436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				391EEFFF1960A23100FEA436 /* Rome */,
+				391EF0201960A23100FEA436 /* RomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		391EEFFE1960A23100FEA436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF00E1960A23100FEA436 /* InfoPlist.strings in Resources */,
+				391EF03B1960A58700FEA436 /* icon_available.png in Resources */,
+				391EF01C1960A23100FEA436 /* Images.xcassets in Resources */,
+				391EF03C1960A58700FEA436 /* icon_busy.png in Resources */,
+				391EF0141960A23100FEA436 /* Credits.rtf in Resources */,
+				391EF03D1960A58700FEA436 /* icon_offline.png in Resources */,
+				391EF0481960A7BD00FEA436 /* RMTeamWindowController.xib in Resources */,
+				391EF01A1960A23100FEA436 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391EF01F1960A23100FEA436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF02C1960A23100FEA436 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		391EEFFC1960A23100FEA436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF0101960A23100FEA436 /* main.m in Sources */,
+				391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */,
+				391EF0171960A23100FEA436 /* RMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		391EF01D1960A23100FEA436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391EF02E1960A23100FEA436 /* RomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		391EF0261960A23100FEA436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 391EEFFF1960A23100FEA436 /* Rome */;
+			targetProxy = 391EF0251960A23100FEA436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		391EF00C1960A23100FEA436 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391EF00D1960A23100FEA436 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		391EF0121960A23100FEA436 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391EF0131960A23100FEA436 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		391EF0181960A23100FEA436 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391EF0191960A23100FEA436 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		391EF02A1960A23100FEA436 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391EF02B1960A23100FEA436 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		391EF02F1960A23100FEA436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		391EF0301960A23100FEA436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		391EF0321960A23100FEA436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
+				INFOPLIST_FILE = "Rome/Rome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		391EF0331960A23100FEA436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
+				INFOPLIST_FILE = "Rome/Rome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		391EF0351960A23100FEA436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rome.app/Contents/MacOS/Rome";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RomeTests/RomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		391EF0361960A23100FEA436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rome.app/Contents/MacOS/Rome";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rome/Rome-Prefix.pch";
+				INFOPLIST_FILE = "RomeTests/RomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		391EEFFB1960A23100FEA436 /* Build configuration list for PBXProject "Rome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391EF02F1960A23100FEA436 /* Debug */,
+				391EF0301960A23100FEA436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391EF0311960A23100FEA436 /* Build configuration list for PBXNativeTarget "Rome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391EF0321960A23100FEA436 /* Debug */,
+				391EF0331960A23100FEA436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		391EF0341960A23100FEA436 /* Build configuration list for PBXNativeTarget "RomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391EF0351960A23100FEA436 /* Debug */,
+				391EF0361960A23100FEA436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 391EEFF81960A23100FEA436 /* Project object */;
+}
