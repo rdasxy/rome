@@ -23,6 +23,8 @@
 		391EF03D1960A58700FEA436 /* icon_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF03A1960A58700FEA436 /* icon_offline.png */; };
 		391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */; };
 		391EF0481960A7BD00FEA436 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */; };
+		398EEAEF1960AE5B007BA0B2 /* RMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAEE1960AE5B007BA0B2 /* RMUser.m */; };
+		398EEAF21960B110007BA0B2 /* RMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAF11960B110007BA0B2 /* RMContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		391EF0441960A7BD00FEA436 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamWindowController.h; path = WindowControllers/RMTeamWindowController.h; sourceTree = "<group>"; };
 		391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamWindowController.m; path = WindowControllers/RMTeamWindowController.m; sourceTree = "<group>"; };
 		391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RMTeamWindowController.xib; path = WindowControllers/RMTeamWindowController.xib; sourceTree = "<group>"; };
+		398EEAED1960AE5B007BA0B2 /* RMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMUser.h; path = "Business Logic/RMUser.h"; sourceTree = "<group>"; };
+		398EEAEE1960AE5B007BA0B2 /* RMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMUser.m; path = "Business Logic/RMUser.m"; sourceTree = "<group>"; };
+		398EEAF01960B110007BA0B2 /* RMContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMContext.h; path = "Business Logic/RMContext.h"; sourceTree = "<group>"; };
+		398EEAF11960B110007BA0B2 /* RMContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMContext.m; path = "Business Logic/RMContext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		391EF0091960A23100FEA436 /* Rome */ = {
 			isa = PBXGroup;
 			children = (
+				398EEAEC1960AD7F007BA0B2 /* Business Logic */,
 				391EF0491960A7C100FEA436 /* WindowControllers */,
 				391EF0151960A23100FEA436 /* RMAppDelegate.h */,
 				391EF0161960A23100FEA436 /* RMAppDelegate.m */,
@@ -185,6 +192,17 @@
 				391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */,
 			);
 			name = WindowControllers;
+			sourceTree = "<group>";
+		};
+		398EEAEC1960AD7F007BA0B2 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				398EEAED1960AE5B007BA0B2 /* RMUser.h */,
+				398EEAEE1960AE5B007BA0B2 /* RMUser.m */,
+				398EEAF01960B110007BA0B2 /* RMContext.h */,
+				398EEAF11960B110007BA0B2 /* RMContext.m */,
+			);
+			name = "Business Logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +311,8 @@
 				391EF0101960A23100FEA436 /* main.m in Sources */,
 				391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */,
 				391EF0171960A23100FEA436 /* RMAppDelegate.m in Sources */,
+				398EEAF21960B110007BA0B2 /* RMContext.m in Sources */,
+				398EEAEF1960AE5B007BA0B2 /* RMUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +525,7 @@
 				391EF0331960A23100FEA436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		391EF0341960A23100FEA436 /* Build configuration list for PBXNativeTarget "RomeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				391EF0361960A23100FEA436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

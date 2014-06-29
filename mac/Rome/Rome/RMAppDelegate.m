@@ -7,7 +7,7 @@
 //
 
 #import "RMAppDelegate.h"
-
+#import "RMContext.h"
 
 @implementation RMAppDelegate
 
@@ -20,11 +20,30 @@
     statusItem =  [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:menu];
     [statusItem setHighlightMode:YES];
-    [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+    
+    if ([RMContext isUserLoggedIn]) {
+        NSLog(@"Already logged in");
+        [self userSignedIn];
+    }
+    else {
+        NSLog(@"Not logged in");
+        [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+    }
 }
 
 - (IBAction)signIn:(id)sender {
     // TODO: User Validation
+    RMUser * user = [[RMUser alloc] init];
+    user.userID = 32324;
+    user.userName = @"ttran4040";
+    user.firstName = @"Tam";
+    user.token = @"dlkjdsfkljhfsd";
+    
+    [self userSignedIn];
+    [RMContext saveUser:user];
+}
+
+- (void) userSignedIn {
     [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
     [menu removeItemAtIndex:0];
     [menu removeItemAtIndex:0];
