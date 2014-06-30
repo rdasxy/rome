@@ -1,7 +1,5 @@
 package com.ravipatel.statusserver.models;
 
-// Generated Jun 20, 2014 1:52:25 PM by Hibernate Tools 4.0.0
-
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -12,11 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Home object for domain model class State.
- * @see com.ravipatel.status.hibernatemodels.State
- * @author Hibernate Tools
- */
 @Repository
 public class StateDao {
 

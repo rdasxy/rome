@@ -13,11 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Home object for domain model class Company.
- * @see com.ravipatel.status.hibernatemodels.Company
- * @author Hibernate Tools
- */
 @Repository
 public class CompanyDao {
 
@@ -78,7 +73,9 @@ public class CompanyDao {
 	@Transactional(readOnly=true)
 	public List<User> findAllUsersForCompany(Company company){
 		Session session = sessionFactory.getCurrentSession();
-		List<User> users = session.createCriteria(User.class).add(Restrictions.eq("company", company)).list();
+		List<User> users = session.createCriteria(User.class)
+				.add(Restrictions.eq("company", company))
+				.list();
 		return users;
 	}
 }

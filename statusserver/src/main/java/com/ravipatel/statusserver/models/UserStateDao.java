@@ -1,7 +1,5 @@
 package com.ravipatel.statusserver.models;
 
-// Generated Jun 20, 2014 1:52:25 PM by Hibernate Tools 4.0.0
-
 import java.util.Date;
 import java.util.List;
 
@@ -16,12 +14,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Home object for domain model class UserState.
- * 
- * @see com.ravipatel.status.hibernatemodels.UserState
- * @author Hibernate Tools
- */
 @Repository
 public class UserStateDao {
 

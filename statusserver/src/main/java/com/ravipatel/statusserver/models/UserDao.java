@@ -17,12 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ravipatel.statusserver.utils.PasswordUtil;
 
-/**
- * Home object for domain model class User.
- * 
- * @see com.ravipatel.status.hibernatemodels.User
- * @author Hibernate Tools
- */
 @Repository
 public class UserDao {
 
