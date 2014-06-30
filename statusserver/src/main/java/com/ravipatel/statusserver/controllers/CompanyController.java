@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ravipatel.statusserver.models.CompanyDao;
@@ -24,7 +25,7 @@ public class CompanyController {
 	@Autowired
 	private UserDao userDao;
 	
-	@RequestMapping(value="users")
+	@RequestMapping(value="users",method=RequestMethod.GET)
 	public @ResponseBody ResponseEntity<BaseJsonOutput> getAllUsersForCurrentUsersCompany(
 			@PathVariable("user_id") Integer userId){
 		User user = userDao.findById(userId);
