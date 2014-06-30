@@ -2,6 +2,8 @@ package com.ravipatel.statusserver.models;
 
 // Generated Jun 20, 2014 1:52:25 PM by Hibernate Tools 4.0.0
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -9,6 +11,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -74,5 +77,11 @@ public class CompanyDao {
 			log.error("get failed", re);
 			throw re;
 		}
+	}
+	@Transactional(readOnly=true)
+	public List<User> findAllUsersForCompany(Company company){
+		Session session = sessionFactory.getCurrentSession();
+		List<User> users = session.createCriteria(User.class).add(Restrictions.eq("company", company)).list();
+		return users;
 	}
 }
