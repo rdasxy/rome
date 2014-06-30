@@ -21,4 +21,4 @@ Pods/
  statusserver/target/
  statusserver/.classpath
  statusserver/.project
- statusserver/.settings
+ statusserver/.settings/
