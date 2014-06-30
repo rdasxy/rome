@@ -14,7 +14,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
@@ -24,6 +23,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "user_state", catalog = "status")
 public class UserState implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7029919686490911593L;
 	private Integer id;
 	private User user;
 	private State state;

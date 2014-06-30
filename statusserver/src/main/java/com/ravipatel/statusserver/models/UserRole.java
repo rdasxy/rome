@@ -19,6 +19,10 @@ import javax.persistence.Table;
 @Table(name = "user_role", catalog = "status")
 public class UserRole implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -881224557644989326L;
 	private Integer id;
 	private User user;
 	private Role role;

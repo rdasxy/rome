@@ -29,6 +29,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @Table(name = "user", catalog = "status", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class User implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8512854518513931599L;
 	private Integer id;
 	private Company company;
 	private String password;

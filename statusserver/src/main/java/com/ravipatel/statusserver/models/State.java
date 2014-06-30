@@ -17,7 +17,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -27,6 +26,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @Table(name = "state", catalog = "status")
 public class State implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -581718542218171797L;
 	private Integer id;
 	private String name;
 	private byte isInterruptible;

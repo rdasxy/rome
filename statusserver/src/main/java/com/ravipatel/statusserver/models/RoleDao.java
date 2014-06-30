@@ -2,9 +2,6 @@ package com.ravipatel.statusserver.models;
 
 // Generated Jun 20, 2014 1:52:25 PM by Hibernate Tools 4.0.0
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;

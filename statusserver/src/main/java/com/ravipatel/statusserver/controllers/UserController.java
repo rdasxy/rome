@@ -3,9 +3,6 @@ package com.ravipatel.statusserver.controllers;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,21 +13,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fasterxml.jackson.databind.deser.Deserializers.Base;
 import com.ravipatel.statusserver.models.Company;
 import com.ravipatel.statusserver.models.CompanyDao;
 import com.ravipatel.statusserver.models.Role;
 import com.ravipatel.statusserver.models.RoleDao;
 import com.ravipatel.statusserver.models.User;
 import com.ravipatel.statusserver.models.UserDao;
-import com.ravipatel.statusserver.models.UserRole;
 import com.ravipatel.statusserver.models.UserRoleDao;
 import com.ravipatel.statusserver.utils.BaseJsonOutput;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	private static final Log log = LogFactory.getLog(UserController.class);
 	@Autowired
 	private UserDao userDao;
 	@Autowired
