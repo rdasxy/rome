@@ -21,10 +21,26 @@
 		391EF03B1960A58700FEA436 /* icon_available.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0381960A58700FEA436 /* icon_available.png */; };
 		391EF03C1960A58700FEA436 /* icon_busy.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0391960A58700FEA436 /* icon_busy.png */; };
 		391EF03D1960A58700FEA436 /* icon_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF03A1960A58700FEA436 /* icon_offline.png */; };
-		391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */; };
-		391EF0481960A7BD00FEA436 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */; };
 		398EEAEF1960AE5B007BA0B2 /* RMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAEE1960AE5B007BA0B2 /* RMUser.m */; };
 		398EEAF21960B110007BA0B2 /* RMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAF11960B110007BA0B2 /* RMContext.m */; };
+		F851C68E19774401002B0EA8 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F851C68C19774401002B0EA8 /* RMTeamWindowController.m */; };
+		F851C68F19774401002B0EA8 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */; };
+		F86FA2DE196A276200C819FF /* RMLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FA2DC196A276200C819FF /* RMLoginWindowController.m */; };
+		F86FA2DF196A276200C819FF /* RMLoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */; };
+		F8C1DC6F1965102E00BF994A /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC511965102E00BF994A /* Base64.m */; };
+		F8C1DC701965102E00BF994A /* UNIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC541965102E00BF994A /* UNIBaseRequest.m */; };
+		F8C1DC711965102E00BF994A /* UNIBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC561965102E00BF994A /* UNIBodyRequest.m */; };
+		F8C1DC721965102E00BF994A /* UNISimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC581965102E00BF994A /* UNISimpleRequest.m */; };
+		F8C1DC731965102E00BF994A /* UNIHTTPBinaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC5B1965102E00BF994A /* UNIHTTPBinaryResponse.m */; };
+		F8C1DC741965102E00BF994A /* UNIHTTPJsonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC5D1965102E00BF994A /* UNIHTTPJsonResponse.m */; };
+		F8C1DC751965102E00BF994A /* UNIHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC5F1965102E00BF994A /* UNIHTTPResponse.m */; };
+		F8C1DC761965102E00BF994A /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC611965102E00BF994A /* UNIHTTPStringResponse.m */; };
+		F8C1DC771965102E00BF994A /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC631965102E00BF994A /* UNIJsonNode.m */; };
+		F8C1DC781965102E00BF994A /* UNIHTTPClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC651965102E00BF994A /* UNIHTTPClientHelper.m */; };
+		F8C1DC791965102E00BF994A /* UNIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC671965102E00BF994A /* UNIHTTPRequest.m */; };
+		F8C1DC7A1965102E00BF994A /* UNIHTTPRequestWithBody.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC691965102E00BF994A /* UNIHTTPRequestWithBody.m */; };
+		F8C1DC7B1965102E00BF994A /* UNIRest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC6C1965102E00BF994A /* UNIRest.m */; };
+		F8C1DC7C1965102E00BF994A /* UNIUrlConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC6E1965102E00BF994A /* UNIUrlConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +76,45 @@
 		391EF0381960A58700FEA436 /* icon_available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_available.png; sourceTree = "<group>"; };
 		391EF0391960A58700FEA436 /* icon_busy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_busy.png; sourceTree = "<group>"; };
 		391EF03A1960A58700FEA436 /* icon_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_offline.png; sourceTree = "<group>"; };
-		391EF0441960A7BD00FEA436 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamWindowController.h; path = WindowControllers/RMTeamWindowController.h; sourceTree = "<group>"; };
-		391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamWindowController.m; path = WindowControllers/RMTeamWindowController.m; sourceTree = "<group>"; };
-		391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RMTeamWindowController.xib; path = WindowControllers/RMTeamWindowController.xib; sourceTree = "<group>"; };
 		398EEAED1960AE5B007BA0B2 /* RMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMUser.h; path = "Business Logic/RMUser.h"; sourceTree = "<group>"; };
 		398EEAEE1960AE5B007BA0B2 /* RMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMUser.m; path = "Business Logic/RMUser.m"; sourceTree = "<group>"; };
 		398EEAF01960B110007BA0B2 /* RMContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMContext.h; path = "Business Logic/RMContext.h"; sourceTree = "<group>"; };
 		398EEAF11960B110007BA0B2 /* RMContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMContext.m; path = "Business Logic/RMContext.m"; sourceTree = "<group>"; };
+		F851C68B19774401002B0EA8 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTeamWindowController.h; sourceTree = "<group>"; };
+		F851C68C19774401002B0EA8 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTeamWindowController.m; sourceTree = "<group>"; };
+		F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMTeamWindowController.xib; sourceTree = "<group>"; };
+		F86FA2DB196A276200C819FF /* RMLoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoginWindowController.h; sourceTree = "<group>"; };
+		F86FA2DC196A276200C819FF /* RMLoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLoginWindowController.m; sourceTree = "<group>"; };
+		F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMLoginWindowController.xib; sourceTree = "<group>"; };
+		F8C1DC501965102E00BF994A /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		F8C1DC511965102E00BF994A /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		F8C1DC531965102E00BF994A /* UNIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBaseRequest.h; sourceTree = "<group>"; };
+		F8C1DC541965102E00BF994A /* UNIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBaseRequest.m; sourceTree = "<group>"; };
+		F8C1DC551965102E00BF994A /* UNIBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBodyRequest.h; sourceTree = "<group>"; };
+		F8C1DC561965102E00BF994A /* UNIBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBodyRequest.m; sourceTree = "<group>"; };
+		F8C1DC571965102E00BF994A /* UNISimpleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNISimpleRequest.h; sourceTree = "<group>"; };
+		F8C1DC581965102E00BF994A /* UNISimpleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNISimpleRequest.m; sourceTree = "<group>"; };
+		F8C1DC5A1965102E00BF994A /* UNIHTTPBinaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPBinaryResponse.h; sourceTree = "<group>"; };
+		F8C1DC5B1965102E00BF994A /* UNIHTTPBinaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPBinaryResponse.m; sourceTree = "<group>"; };
+		F8C1DC5C1965102E00BF994A /* UNIHTTPJsonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPJsonResponse.h; sourceTree = "<group>"; };
+		F8C1DC5D1965102E00BF994A /* UNIHTTPJsonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPJsonResponse.m; sourceTree = "<group>"; };
+		F8C1DC5E1965102E00BF994A /* UNIHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPResponse.h; sourceTree = "<group>"; };
+		F8C1DC5F1965102E00BF994A /* UNIHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPResponse.m; sourceTree = "<group>"; };
+		F8C1DC601965102E00BF994A /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPStringResponse.h; sourceTree = "<group>"; };
+		F8C1DC611965102E00BF994A /* UNIHTTPStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPStringResponse.m; sourceTree = "<group>"; };
+		F8C1DC621965102E00BF994A /* UNIJsonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIJsonNode.h; sourceTree = "<group>"; };
+		F8C1DC631965102E00BF994A /* UNIJsonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIJsonNode.m; sourceTree = "<group>"; };
+		F8C1DC641965102E00BF994A /* UNIHTTPClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPClientHelper.h; sourceTree = "<group>"; };
+		F8C1DC651965102E00BF994A /* UNIHTTPClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPClientHelper.m; sourceTree = "<group>"; };
+		F8C1DC661965102E00BF994A /* UNIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequest.h; sourceTree = "<group>"; };
+		F8C1DC671965102E00BF994A /* UNIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequest.m; sourceTree = "<group>"; };
+		F8C1DC681965102E00BF994A /* UNIHTTPRequestWithBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequestWithBody.h; sourceTree = "<group>"; };
+		F8C1DC691965102E00BF994A /* UNIHTTPRequestWithBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequestWithBody.m; sourceTree = "<group>"; };
+		F8C1DC6A1965102E00BF994A /* Unirest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Unirest-Prefix.pch"; sourceTree = "<group>"; };
+		F8C1DC6B1965102E00BF994A /* UNIRest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIRest.h; sourceTree = "<group>"; };
+		F8C1DC6C1965102E00BF994A /* UNIRest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIRest.m; sourceTree = "<group>"; };
+		F8C1DC6D1965102E00BF994A /* UNIUrlConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIUrlConnection.h; sourceTree = "<group>"; };
+		F8C1DC6E1965102E00BF994A /* UNIUrlConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIUrlConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +180,7 @@
 		391EF0091960A23100FEA436 /* Rome */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1DC7D1965103400BF994A /* LIbraries */,
 				398EEAEC1960AD7F007BA0B2 /* Business Logic */,
 				391EF0491960A7C100FEA436 /* WindowControllers */,
 				391EF0151960A23100FEA436 /* RMAppDelegate.h */,
@@ -187,9 +236,12 @@
 		391EF0491960A7C100FEA436 /* WindowControllers */ = {
 			isa = PBXGroup;
 			children = (
-				391EF0441960A7BD00FEA436 /* RMTeamWindowController.h */,
-				391EF0451960A7BD00FEA436 /* RMTeamWindowController.m */,
-				391EF0461960A7BD00FEA436 /* RMTeamWindowController.xib */,
+				F86FA2DB196A276200C819FF /* RMLoginWindowController.h */,
+				F86FA2DC196A276200C819FF /* RMLoginWindowController.m */,
+				F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */,
+				F851C68B19774401002B0EA8 /* RMTeamWindowController.h */,
+				F851C68C19774401002B0EA8 /* RMTeamWindowController.m */,
+				F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */,
 			);
 			name = WindowControllers;
 			sourceTree = "<group>";
@@ -203,6 +255,66 @@
 				398EEAF11960B110007BA0B2 /* RMContext.m */,
 			);
 			name = "Business Logic";
+			sourceTree = "<group>";
+		};
+		F8C1DC4F1965102E00BF994A /* Unirest */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1DC501965102E00BF994A /* Base64.h */,
+				F8C1DC511965102E00BF994A /* Base64.m */,
+				F8C1DC521965102E00BF994A /* HttpRequest */,
+				F8C1DC591965102E00BF994A /* HttpResponse */,
+				F8C1DC641965102E00BF994A /* UNIHTTPClientHelper.h */,
+				F8C1DC651965102E00BF994A /* UNIHTTPClientHelper.m */,
+				F8C1DC661965102E00BF994A /* UNIHTTPRequest.h */,
+				F8C1DC671965102E00BF994A /* UNIHTTPRequest.m */,
+				F8C1DC681965102E00BF994A /* UNIHTTPRequestWithBody.h */,
+				F8C1DC691965102E00BF994A /* UNIHTTPRequestWithBody.m */,
+				F8C1DC6A1965102E00BF994A /* Unirest-Prefix.pch */,
+				F8C1DC6B1965102E00BF994A /* UNIRest.h */,
+				F8C1DC6C1965102E00BF994A /* UNIRest.m */,
+				F8C1DC6D1965102E00BF994A /* UNIUrlConnection.h */,
+				F8C1DC6E1965102E00BF994A /* UNIUrlConnection.m */,
+			);
+			path = Unirest;
+			sourceTree = "<group>";
+		};
+		F8C1DC521965102E00BF994A /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1DC531965102E00BF994A /* UNIBaseRequest.h */,
+				F8C1DC541965102E00BF994A /* UNIBaseRequest.m */,
+				F8C1DC551965102E00BF994A /* UNIBodyRequest.h */,
+				F8C1DC561965102E00BF994A /* UNIBodyRequest.m */,
+				F8C1DC571965102E00BF994A /* UNISimpleRequest.h */,
+				F8C1DC581965102E00BF994A /* UNISimpleRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		F8C1DC591965102E00BF994A /* HttpResponse */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1DC5A1965102E00BF994A /* UNIHTTPBinaryResponse.h */,
+				F8C1DC5B1965102E00BF994A /* UNIHTTPBinaryResponse.m */,
+				F8C1DC5C1965102E00BF994A /* UNIHTTPJsonResponse.h */,
+				F8C1DC5D1965102E00BF994A /* UNIHTTPJsonResponse.m */,
+				F8C1DC5E1965102E00BF994A /* UNIHTTPResponse.h */,
+				F8C1DC5F1965102E00BF994A /* UNIHTTPResponse.m */,
+				F8C1DC601965102E00BF994A /* UNIHTTPStringResponse.h */,
+				F8C1DC611965102E00BF994A /* UNIHTTPStringResponse.m */,
+				F8C1DC621965102E00BF994A /* UNIJsonNode.h */,
+				F8C1DC631965102E00BF994A /* UNIJsonNode.m */,
+			);
+			path = HttpResponse;
+			sourceTree = "<group>";
+		};
+		F8C1DC7D1965103400BF994A /* LIbraries */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1DC4F1965102E00BF994A /* Unirest */,
+			);
+			name = LIbraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +398,10 @@
 				391EF03B1960A58700FEA436 /* icon_available.png in Resources */,
 				391EF01C1960A23100FEA436 /* Images.xcassets in Resources */,
 				391EF03C1960A58700FEA436 /* icon_busy.png in Resources */,
+				F86FA2DF196A276200C819FF /* RMLoginWindowController.xib in Resources */,
 				391EF0141960A23100FEA436 /* Credits.rtf in Resources */,
 				391EF03D1960A58700FEA436 /* icon_offline.png in Resources */,
-				391EF0481960A7BD00FEA436 /* RMTeamWindowController.xib in Resources */,
+				F851C68F19774401002B0EA8 /* RMTeamWindowController.xib in Resources */,
 				391EF01A1960A23100FEA436 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,11 +421,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C1DC7C1965102E00BF994A /* UNIUrlConnection.m in Sources */,
+				F8C1DC791965102E00BF994A /* UNIHTTPRequest.m in Sources */,
 				391EF0101960A23100FEA436 /* main.m in Sources */,
-				391EF0471960A7BD00FEA436 /* RMTeamWindowController.m in Sources */,
+				F8C1DC7B1965102E00BF994A /* UNIRest.m in Sources */,
+				F86FA2DE196A276200C819FF /* RMLoginWindowController.m in Sources */,
+				F8C1DC781965102E00BF994A /* UNIHTTPClientHelper.m in Sources */,
+				F8C1DC7A1965102E00BF994A /* UNIHTTPRequestWithBody.m in Sources */,
+				F8C1DC701965102E00BF994A /* UNIBaseRequest.m in Sources */,
 				391EF0171960A23100FEA436 /* RMAppDelegate.m in Sources */,
+				F851C68E19774401002B0EA8 /* RMTeamWindowController.m in Sources */,
+				F8C1DC771965102E00BF994A /* UNIJsonNode.m in Sources */,
 				398EEAF21960B110007BA0B2 /* RMContext.m in Sources */,
+				F8C1DC6F1965102E00BF994A /* Base64.m in Sources */,
+				F8C1DC721965102E00BF994A /* UNISimpleRequest.m in Sources */,
+				F8C1DC711965102E00BF994A /* UNIBodyRequest.m in Sources */,
+				F8C1DC731965102E00BF994A /* UNIHTTPBinaryResponse.m in Sources */,
+				F8C1DC741965102E00BF994A /* UNIHTTPJsonResponse.m in Sources */,
 				398EEAEF1960AE5B007BA0B2 /* RMUser.m in Sources */,
+				F8C1DC751965102E00BF994A /* UNIHTTPResponse.m in Sources */,
+				F8C1DC761965102E00BF994A /* UNIHTTPStringResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,22 +7,32 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
+
+
+#import "RMContext.h"
+#import "Unirest.h"
+#import "RMLoginWindowController.h"
 #import "RMTeamWindowController.h"
 
 @interface RMAppDelegate : NSObject <NSApplicationDelegate>
 {
     NSStatusItem *statusItem;
-    RMTeamWindowController *twc;
     IBOutlet NSMenu *menu;
+    NSWindowController *lwc, *twc;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 
 @property (weak) IBOutlet NSMenuItem *item1;
 
-- (IBAction)showTeam:(id)sender;
-- (void)setAvailable;
-- (void)setBusy;
-- (IBAction)saveAction:(id)sender;
+- (void)displayLoginWindow;
+- (void)displayTeamWindow;
+- (void)setUserAvailable;
+- (void)menuClear;
+- (void)postSignInMenu;
+- (void)postSignOutMenu;
+- (void)signOut;
+- (void)quit;
 
 @end

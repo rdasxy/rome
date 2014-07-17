@@ -2,7 +2,7 @@
 //  RMTeamWindowController.m
 //  Rome
 //
-//  Created by Riddhiman Das on 6/29/14.
+//  Created by Tam Tran on 7/16/14.
 //  Copyright (c) 2014 Laplacian. All rights reserved.
 //
 
@@ -18,7 +18,8 @@
 {
     self = [super initWithWindow:window];
     if (self) {
-        NSLog(@"We\'re initialized");
+        // Initialization code here.
+        [window orderFront:nil];
     }
     return self;
 }
@@ -26,7 +27,6 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-            NSLog(@"We\'re Loaded");
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }

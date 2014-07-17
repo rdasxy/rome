@@ -7,7 +7,9 @@
 //
 
 #import "RMAppDelegate.h"
-#import "RMContext.h"
+
+
+
 
 @implementation RMAppDelegate
 
@@ -16,58 +18,81 @@
     // Insert code here to initialize your application
 }
 
--(void)awakeFromNib{
+- (void)awakeFromNib{
     statusItem =  [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:menu];
     [statusItem setHighlightMode:YES];
-    
-    if ([RMContext isUserLoggedIn]) {
+    if ([[RMContext getCurrentUser] userID] !=0) {
         NSLog(@"Already logged in");
-        [self userSignedIn];
-    }
+            [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
+            [self postSignInMenu];
+                }
     else {
         NSLog(@"Not logged in");
-        [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+            [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+            [self postSignOutMenu];
     }
 }
 
-- (IBAction)signIn:(id)sender {
-    // TODO: User Validation
+//Display Windows
+- (void)displayLoginWindow{
+   lwc = [[RMLoginWindowController alloc] initWithWindowNibName:@"RMLoginWindowController"];
+    [lwc showWindow:nil];
     RMUser * user = [[RMUser alloc] init];
-    user.userID = 32324;
-    user.userName = @"ttran4040";
-    user.firstName = @"Tam";
-    user.token = @"dlkjdsfkljhfsd";
-    
-    [self userSignedIn];
+    user.userID = 1;
     [RMContext saveUser:user];
 }
 
-- (void) userSignedIn {
-    [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
-    [menu removeItemAtIndex:0];
-    [menu removeItemAtIndex:0];
-    
-    [menu addItemWithTitle:@"Show Team"  action:@selector(showTeam:) keyEquivalent:@""];
-    [menu addItemWithTitle:@"Available"  action:@selector(setAvailable) keyEquivalent:@""];
-    [menu addItemWithTitle:@"Busy"  action:@selector(setBusy) keyEquivalent:@""];
-    [menu addItemWithTitle:@"Quit"  action:@selector(quit:) keyEquivalent:@""];
-}
-
-- (IBAction)showTeam:(id)sender{
+- (void)displayTeamWindow{
     twc = [[RMTeamWindowController alloc] initWithWindowNibName:@"RMTeamWindowController"];
     [twc showWindow:nil];
+
+    RMUser * user = [[RMUser alloc] init];
+    user.userID = 1;
+    [RMContext saveUser:user];
+
 }
 
-- (void)setAvailable{
-//    [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
+- (void)setUserAvailable{
+    [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
+    [self postSignInMenu];
 }
 
-- (void)setBusy{
-//    [statusItem setImage: [NSImage imageNamed:@"icon_busy"]];
+- (void)setUserBusy{
+    [statusItem setImage: [NSImage imageNamed:@"icon_busy"]];
+    [self postSignInMenu];
 }
 
-- (IBAction)quit:(id)sender {
+- (void)menuClear{
+    [menu removeAllItems];
+}
+
+-(void)postSignInMenu{
+    [menu removeAllItems];
+    [menu addItemWithTitle:@"Show Team"  action:@selector(displayTeamWindow) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Available"  action:@selector(setUserAvailable) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Busy"  action:@selector(setUserBusy) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Sign out"  action:@selector(signOut) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Quit"  action:@selector(quit) keyEquivalent:@""];
+}
+
+- (void)postSignOutMenu{
+    [menu removeAllItems];
+    [menu addItemWithTitle:@"Sign in"  action:@selector(displayLoginWindow) keyEquivalent:@""];
+    [menu addItemWithTitle:@"Quit"  action:@selector(quit) keyEquivalent:@""];
+}
+
+- (void)signOut{
+    RMUser * user = [[RMUser alloc] init];
+    user.userID = 0;
+    [RMContext saveUser:user];
+    [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+    [statusItem setMenu:menu];
+    [statusItem setHighlightMode:YES];
+    [self postSignOutMenu];
+}
+
+- (void)quit{
     [NSApp terminate:nil];
 }
 
