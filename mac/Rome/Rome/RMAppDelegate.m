@@ -9,8 +9,6 @@
 #import "RMAppDelegate.h"
 
 
-
-
 @implementation RMAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -24,19 +22,18 @@
     [statusItem setHighlightMode:YES];
     if ([[RMContext getCurrentUser] userID] !=0) {
         NSLog(@"Already logged in");
-            [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
-            [self postSignInMenu];
-                }
+        [statusItem setImage: [NSImage imageNamed:@"icon_available"]];
+        [self postSignInMenu];
+    }
     else {
         NSLog(@"Not logged in");
-            [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
-            [self postSignOutMenu];
+        [statusItem setImage: [NSImage imageNamed:@"icon_offline"]];
+        [self postSignOutMenu];
     }
 }
 
-//Display Windows
 - (void)displayLoginWindow{
-   lwc = [[RMLoginWindowController alloc] initWithWindowNibName:@"RMLoginWindowController"];
+    lwc = [[RMLoginWindowController alloc] initWithWindowNibName:@"RMLoginWindowController"];
     [lwc showWindow:nil];
     RMUser * user = [[RMUser alloc] init];
     user.userID = 1;
@@ -44,13 +41,9 @@
 }
 
 - (void)displayTeamWindow{
-    twc = [[RMTeamWindowController alloc] initWithWindowNibName:@"RMTeamWindowController"];
+    twc = [[RMTeamWindowController
+            alloc] initWithWindowNibName:@"RMTeamWindowController"];
     [twc showWindow:nil];
-
-    RMUser * user = [[RMUser alloc] init];
-    user.userID = 1;
-    [RMContext saveUser:user];
-
 }
 
 - (void)setUserAvailable{
@@ -95,5 +88,6 @@
 - (void)quit{
     [NSApp terminate:nil];
 }
+
 
 @end

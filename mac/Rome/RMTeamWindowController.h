@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface RMTeamWindowController : NSWindowController
+@interface RMTeamWindowController : NSWindowController{
+    NSArray *tableData;
+
+}
+- (IBAction)add_data:(id)sender;
 
 @end

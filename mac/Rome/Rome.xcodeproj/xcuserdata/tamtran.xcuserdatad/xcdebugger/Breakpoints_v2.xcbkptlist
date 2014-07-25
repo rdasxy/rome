@@ -86,22 +86,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Rome/RMLoginWindowController.m"
-            timestampString = "427243206.128529"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "@interface RMLoginWindowController()"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Rome/RMLoginWindowController.m"
             timestampString = "427247881.261307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -130,11 +114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Rome/RMLoginWindowController.m"
-            timestampString = "427247881.261307"
+            timestampString = "427250332.083593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81">
+            startingLineNumber = "1"
+            endingLineNumber = "1">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -204,7 +188,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Rome/RMAppDelegate.h"
-            timestampString = "427246969.619357"
+            timestampString = "427268315.406071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -265,13 +249,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rome/RMLoginWindowController.m"
-            timestampString = "427247881.261307"
+            filePath = "Rome/RMAppDelegate.m"
+            timestampString = "427311802.222929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-login_button:"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-postSignInMenu"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -281,13 +265,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rome/RMAppDelegate.m"
-            timestampString = "427247881.261307"
+            filePath = "RMTeamWindowController.m"
+            timestampString = "427311494.049623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-postSignInMenu"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-windowDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

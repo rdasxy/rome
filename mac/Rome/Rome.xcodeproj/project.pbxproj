@@ -23,10 +23,10 @@
 		391EF03D1960A58700FEA436 /* icon_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 391EF03A1960A58700FEA436 /* icon_offline.png */; };
 		398EEAEF1960AE5B007BA0B2 /* RMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAEE1960AE5B007BA0B2 /* RMUser.m */; };
 		398EEAF21960B110007BA0B2 /* RMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EEAF11960B110007BA0B2 /* RMContext.m */; };
-		F851C68E19774401002B0EA8 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F851C68C19774401002B0EA8 /* RMTeamWindowController.m */; };
-		F851C68F19774401002B0EA8 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */; };
 		F86FA2DE196A276200C819FF /* RMLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86FA2DC196A276200C819FF /* RMLoginWindowController.m */; };
 		F86FA2DF196A276200C819FF /* RMLoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */; };
+		F88EB7231977642700053FA4 /* RMTeamWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88EB7211977642700053FA4 /* RMTeamWindowController.m */; };
+		F88EB7241977642700053FA4 /* RMTeamWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88EB7221977642700053FA4 /* RMTeamWindowController.xib */; };
 		F8C1DC6F1965102E00BF994A /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC511965102E00BF994A /* Base64.m */; };
 		F8C1DC701965102E00BF994A /* UNIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC541965102E00BF994A /* UNIBaseRequest.m */; };
 		F8C1DC711965102E00BF994A /* UNIBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1DC561965102E00BF994A /* UNIBodyRequest.m */; };
@@ -80,12 +80,12 @@
 		398EEAEE1960AE5B007BA0B2 /* RMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMUser.m; path = "Business Logic/RMUser.m"; sourceTree = "<group>"; };
 		398EEAF01960B110007BA0B2 /* RMContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMContext.h; path = "Business Logic/RMContext.h"; sourceTree = "<group>"; };
 		398EEAF11960B110007BA0B2 /* RMContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMContext.m; path = "Business Logic/RMContext.m"; sourceTree = "<group>"; };
-		F851C68B19774401002B0EA8 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTeamWindowController.h; sourceTree = "<group>"; };
-		F851C68C19774401002B0EA8 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTeamWindowController.m; sourceTree = "<group>"; };
-		F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMTeamWindowController.xib; sourceTree = "<group>"; };
 		F86FA2DB196A276200C819FF /* RMLoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoginWindowController.h; sourceTree = "<group>"; };
 		F86FA2DC196A276200C819FF /* RMLoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMLoginWindowController.m; sourceTree = "<group>"; };
 		F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMLoginWindowController.xib; sourceTree = "<group>"; };
+		F88EB7201977642700053FA4 /* RMTeamWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMTeamWindowController.h; path = ../RMTeamWindowController.h; sourceTree = "<group>"; };
+		F88EB7211977642700053FA4 /* RMTeamWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMTeamWindowController.m; path = ../RMTeamWindowController.m; sourceTree = "<group>"; };
+		F88EB7221977642700053FA4 /* RMTeamWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RMTeamWindowController.xib; path = ../RMTeamWindowController.xib; sourceTree = "<group>"; };
 		F8C1DC501965102E00BF994A /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		F8C1DC511965102E00BF994A /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		F8C1DC531965102E00BF994A /* UNIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBaseRequest.h; sourceTree = "<group>"; };
@@ -236,12 +236,12 @@
 		391EF0491960A7C100FEA436 /* WindowControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F88EB7201977642700053FA4 /* RMTeamWindowController.h */,
+				F88EB7211977642700053FA4 /* RMTeamWindowController.m */,
+				F88EB7221977642700053FA4 /* RMTeamWindowController.xib */,
 				F86FA2DB196A276200C819FF /* RMLoginWindowController.h */,
 				F86FA2DC196A276200C819FF /* RMLoginWindowController.m */,
 				F86FA2DD196A276200C819FF /* RMLoginWindowController.xib */,
-				F851C68B19774401002B0EA8 /* RMTeamWindowController.h */,
-				F851C68C19774401002B0EA8 /* RMTeamWindowController.m */,
-				F851C68D19774401002B0EA8 /* RMTeamWindowController.xib */,
 			);
 			name = WindowControllers;
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 				F86FA2DF196A276200C819FF /* RMLoginWindowController.xib in Resources */,
 				391EF0141960A23100FEA436 /* Credits.rtf in Resources */,
 				391EF03D1960A58700FEA436 /* icon_offline.png in Resources */,
-				F851C68F19774401002B0EA8 /* RMTeamWindowController.xib in Resources */,
+				F88EB7241977642700053FA4 /* RMTeamWindowController.xib in Resources */,
 				391EF01A1960A23100FEA436 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +430,7 @@
 				F8C1DC7A1965102E00BF994A /* UNIHTTPRequestWithBody.m in Sources */,
 				F8C1DC701965102E00BF994A /* UNIBaseRequest.m in Sources */,
 				391EF0171960A23100FEA436 /* RMAppDelegate.m in Sources */,
-				F851C68E19774401002B0EA8 /* RMTeamWindowController.m in Sources */,
+				F88EB7231977642700053FA4 /* RMTeamWindowController.m in Sources */,
 				F8C1DC771965102E00BF994A /* UNIJsonNode.m in Sources */,
 				398EEAF21960B110007BA0B2 /* RMContext.m in Sources */,
 				F8C1DC6F1965102E00BF994A /* Base64.m in Sources */,
